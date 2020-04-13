@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Sunportal: Home </title>
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+</head>
+
+<body>
+    <div class="full-screen">
+        <div class="row-top">
+            <div class="status-container">
+                <div class="status">
+                    <h1>Dag totaal</h1>
+                    <p class="meter" id="dayTotal"></p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="status-container">
+                <div class="status">
+                    <h1>Totaal</h1>
+                    <p class="meter" id="total"></p>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="status-container">
+                <div class="status">
+                    <h1>CO2</h1>
+                    <p class="meter" id="co2"></p>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row-bottom">
+            <div class="chart-fullscreen">
+                <canvas class="chart" id="chartPower"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/jquery-3.4.1.min.js"></script>
+    <script src="/static/js/chart.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>
