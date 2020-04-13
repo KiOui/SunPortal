@@ -103,7 +103,7 @@ function addPrefix(number) {
 }
 
 function loadData() {
-    $.ajax({type: 'post', dataType: "json", url: 'http://sunportal.nl/updateData.php', success: function(response) {
+    $.ajax({type: 'post', dataType: "json", url: '/update', success: function(response) {
         $('#dayTotal').html(addPrefix(response.dayTotal) + "Wh");
         $('#total').html(addPrefix(response.total*1000) + "Wh");
         $('#co2').html(addPrefix(response.co2) + "t");

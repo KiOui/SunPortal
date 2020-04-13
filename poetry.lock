@@ -269,6 +269,14 @@ python-versions = "*"
 version = "1.4.1"
 
 [[package]]
+category = "main"
+description = "The uWSGI server"
+name = "uwsgi"
+optional = false
+python-versions = "*"
+version = "2.0.18"
+
+[[package]]
 category = "dev"
 description = "Measures number of Terminal column cells of wide-character codes"
 name = "wcwidth"
@@ -302,7 +310,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "c7d3c6c8f7adda8e2034797eb39e3e921b2334208781d0f1ee72c144f65b2c02"
+content-hash = "8a609a734cd165b8f1e47dbfd4c45c6c75eb0c169f4c2a7b67f1cfac42037c88"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -471,6 +479,9 @@ typed-ast = [
     {file = "typed_ast-1.4.1-cp38-cp38-win_amd64.whl", hash = "sha256:fc0fea399acb12edbf8a628ba8d2312f583bdbdb3335635db062fa98cf71fca4"},
     {file = "typed_ast-1.4.1-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:d43943ef777f9a1c42bf4e552ba23ac77a6351de620aa9acf64ad54933ad4d34"},
     {file = "typed_ast-1.4.1.tar.gz", hash = "sha256:8c8aaad94455178e3187ab22c8b01a3837f8ee50e09cf31f1ba129eb293ec30b"},
+]
+uwsgi = [
+    {file = "uwsgi-2.0.18.tar.gz", hash = "sha256:4972ac538800fb2d421027f49b4a1869b66048839507ccf0aa2fda792d99f583"},
 ]
 wcwidth = [
     {file = "wcwidth-0.1.9-py2.py3-none-any.whl", hash = "sha256:cafe2186b3c009a04067022ce1dcd79cb38d8d65ee4f4791b8888d6599d1bbe1"},
