@@ -9,7 +9,7 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 WORKDIR /sunportal/src
 
 COPY resources/entrypoint.sh /usr/local/bin/entrypoint.sh
-COPY poetry.lock pyproject.toml /sunportal/src
+COPY poetry.lock pyproject.toml /sunportal/src/
 
 RUN apt-get update && \
     rm --recursive --force /var/lib/apt/lists/* && \
