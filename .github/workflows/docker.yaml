@@ -15,6 +15,13 @@ jobs:
         steps:
             - name: "Checkout repository"
               uses: "actions/checkout@v2"
+              
+            - name: "Set up Docker Buildx"
+            id: buildx
+            uses: crazy-max/ghaction-docker-buildx@v3
+            with:
+              buildx-version: latest
+              qemu-version: latest
 
             - name: "Build Docker image"
               run: |
