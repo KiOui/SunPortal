@@ -18,7 +18,7 @@ jobs:
 
             - name: "Build Docker image"
               run: |
-                  docker buildx create --use sunportal
+                  docker buildx create --use --name  sunportal
                   docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 --tag "${DOCKER_LATEST}" .
 
             - name: "Login to GitHub"
