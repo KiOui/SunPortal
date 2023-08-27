@@ -9,7 +9,7 @@ python = "^3.7"
 Flask = "^2.2.5"
 black = "^19.10b0"
 pydocstyle = "^5.0.2"
-uwsgi = "^2.0.18"
+uwsgi = "^2.0.22"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
